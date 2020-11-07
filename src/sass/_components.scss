@@ -1,0 +1,78 @@
+/////////////////////////////////
+// LOGO
+.logo {
+  height: 3.25rem;
+  margin-left: 3rem;
+}
+////////////////////////////////
+//SEARCH
+.search {
+  //   background-color: aquamarine;
+  flex: 0 0 40%;
+  display: flex;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-grey-light-2);
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 10px;
+    transition: width 0.2s;
+    text-align: center;
+    flex: 0 0 90%;
+    margin-right: -3rem;
+    transition: transform 0.3s;
+
+    &:focus {
+      outline: none;
+      transform: scaleX(1.1);
+      background-color: var(--color-grey-light-3);
+    }
+    &:focus + button {
+      margin-left: 1.2rem;
+    }
+  }
+  &__button {
+    border: none;
+    background-color: var(--color-grey-light-2);
+    z-index: 1;
+    transition: all 0.3s;
+
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    flex: 0 0 30%;
+
+    margin-top: 0.5rem;
+  }
+}
+////////////////////////////
+// USER NAVIGATION
+.user-nav {
+  background-color: cadetblue;
+  &__icon-box {
+  }
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  &__icon-box {
+  }
+  &__notification {
+  }
+  &__user {
+  }
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+  }
+}
