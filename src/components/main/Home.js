@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "../../img/logo.png";
 import sprite from "../../img/sprite.svg";
 import user_photo from "../../img/user.jpg";
-import { FaSearch } from "react-icons/fa";
+
 
 class Home extends Component {
   render() {
@@ -20,9 +20,7 @@ class Home extends Component {
               <svg className="search__icon">
                 <use href={sprite + "#icon-magnifying-glass"} />
               </svg>
-
-              {/* <FaSearch className="search__icon" /> */}
-            </button>
+</button>
           </form>
           <nav className="user-nav">
             <div className="user-nav__icon-box">
