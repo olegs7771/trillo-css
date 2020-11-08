@@ -8,6 +8,7 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
+        {/* HEADER */}
         <header className="header">
           <img src={logo} alt="logo" className="logo" />
           <form action="#" className="search">
@@ -20,7 +21,8 @@ class Home extends Component {
               <svg className="search__icon">
                 <use href={sprite + "#icon-magnifying-glass"} />
               </svg>
-</button>
+            </button>
+           
           </form>
           <nav className="user-nav">
             <div className="user-nav__icon-box">
@@ -45,8 +47,51 @@ class Home extends Component {
             </div>
           </nav>
         </header>
+        {/*  */}
         <div className="content">
-          <nav className="sidebar">Navigation</nav>
+          {/* NAVIGATION - SIDEBAR*/}
+          <nav className="sidebar">
+         <ul className="side-nav">
+              <li className="side-nav__item">
+                <a href="#" className="side-nav__link">
+                  <svg className="side-nav__icon">
+                    <use href={sprite+"#icon-home"}/>
+                  </svg>
+                  <span className="side-nav__icon-name">Hotel</span>
+                </a>
+              </li>
+                <li className="side-nav__item">
+                  <a href="#" className="side-nav__link">
+                    <svg className="side-nav__icon">
+                      <use href={sprite+"#icon-aircraft"}/>
+                    </svg>
+                    <span className="side-nav__icon-name">Flight</span>
+                  </a>
+                </li>
+                <li className="side-nav__item">
+                  <a href="#" className="side-nav__link">
+                    <svg className="side-nav__icon">
+                      <use href={sprite+"#icon-key"}/>
+                      </svg>
+                    <span className="side-nav__icon-name">Car Rental</span>
+                  </a>
+                </li>
+                <li className="side-nav__item">
+                  <a href="#" className="side-nav__link">
+                    <svg className="side-nav__icon">
+                      <use href={sprite+"#icon-map"}/>
+                    </svg>
+                    <span className="side-nav__icon-name">Tours</span>
+                  </a>
+                </li>
+ 
+          </ul>
+            <div className="legal">
+              &copy; 2020 by trillo. All rights reserved.
+            </div>
+      </nav>
+          {/*  */}
+
           <main className="hotel-view">Hotel View</main>
         </div>
       </div>
