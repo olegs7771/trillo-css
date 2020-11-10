@@ -99,14 +99,40 @@ class Home extends Component {
           <main className="hotel-view">
              <div className="gallery">
                <figure className="gallery__item">
-                 <img src={hotel1_img} alt='Hotel 1'/>
+                 <img src={hotel1_img} alt='Hotel 1' className='gallery__photo'/>
                </figure>
                <figure className="gallery__item">
-                 <img src={hotel2_img} alt='Hotel 2'/>
+                 <img src={hotel2_img} alt='Hotel 2' className='gallery__photo'/>
                </figure>
                <figure className="gallery__item">
-                 <img src={hotel3_img} alt='Hotel 3'/>
+                 <img src={hotel3_img} alt='Hotel 3' className='gallery__photo'/>
                </figure>
+             </div>
+             <div className="overview">
+               <h1 className="overview__heading">
+                 Hotel Las Palmas
+               </h1>
+               <div className="overview__stars">
+               <svg className="side-nav__icon">
+                  <use href={sprite+"#icon-star"}/>
+               </svg>
+               <svg className="side-nav__icon">
+                  <use href={sprite+"#icon-star"}/>
+               </svg>
+               <svg className="side-nav__icon">
+                  <use href={sprite+"#icon-star"}/>
+               </svg>
+               <svg className="side-nav__icon">
+                  <use href={sprite+"#icon-star"}/>
+               </svg>
+               <svg className="side-nav__icon">
+                  <use href={sprite+"#icon-star"}/>
+               </svg>
+             
+               </div>
+               <div className="overview__location">
+                 
+               </div>
              </div>
 
           </main>
