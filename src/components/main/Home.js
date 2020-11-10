@@ -52,7 +52,7 @@ class Home extends Component {
           {/* NAVIGATION - SIDEBAR*/}
           <nav className="sidebar">
          <ul className="side-nav">
-              <li className="side-nav__item">
+              <li className="side-nav__item side-nav__item--active">
                 <a href="#" className="side-nav__link">
                   <svg className="side-nav__icon">
                     <use href={sprite+"#icon-home"}/>
@@ -60,7 +60,7 @@ class Home extends Component {
                   <span className="side-nav__icon-name">Hotel</span>
                 </a>
               </li>
-                <li className="side-nav__item">
+                <li className="side-nav__item ">
                   <a href="#" className="side-nav__link">
                     <svg className="side-nav__icon">
                       <use href={sprite+"#icon-aircraft"}/>
