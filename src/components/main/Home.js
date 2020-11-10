@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import logo from "../../img/logo.png";
 import sprite from "../../img/sprite.svg";
 import user_photo from "../../img/user.jpg";
+import hotel1_img from '../../img/hotel-1.jpg'
+import hotel2_img from '../../img/hotel-2.jpg'
+import hotel3_img from '../../img/hotel-3.jpg'
 
 
 class Home extends Component {
@@ -92,7 +95,21 @@ class Home extends Component {
       </nav>
           {/*  */}
 
-          <main className="hotel-view">Hotel View</main>
+{/* HOTEL VIEW MAIN */}
+          <main className="hotel-view">
+             <div className="gallery">
+               <figure className="gallery__item">
+                 <img src={hotel1_img} alt='Hotel 1'/>
+               </figure>
+               <figure className="gallery__item">
+                 <img src={hotel2_img} alt='Hotel 2'/>
+               </figure>
+               <figure className="gallery__item">
+                 <img src={hotel3_img} alt='Hotel 3'/>
+               </figure>
+             </div>
+
+          </main>
         </div>
       </div>
     );
