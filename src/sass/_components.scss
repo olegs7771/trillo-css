@@ -259,8 +259,17 @@
   background-color: transparent;
   cursor: pointer;
   transition: all 0.2s;
+
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+    span {
+      margin-left: 8px;
+    }
   }
   &:focus {
     outline: none;
@@ -346,5 +355,59 @@
     &:not(:last-child) {
       margin-right: -1.5rem;
     }
+  }
+}
+//////////////////////////////////////
+// REVIEWS
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  &__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+  }
+  &__user-box {
+    margin-right: auto;
+    margin-left: 2rem;
+    text-transform: uppercase;
+  }
+  &__user-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  &__user-date {
+  }
+  &__rating {
+    flex: 0 0 10%;
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+  &::before {
+    content: "\201c";
+    position: absolute;
+    top: -8.3rem;
+    left: -0.7rem;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 0;
   }
 }

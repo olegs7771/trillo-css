@@ -185,8 +185,52 @@ class Home extends Component {
                       </div>
               </div>
                       <div className="user-reviews">
-                              user reviews
-                      </div>
+        <figure className="review">
+            <blockquote className='review__text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Magni officia perspiciatis pariatur cumque quod dolorem fugiat quae ducimus odio ipsa. 
+                Quidem necessitatibus, voluptatem cumque culpa totam eaque at iure harum!
+            </blockquote>
+         <figcaption className="review__user">
+            <img src={user_1_img} alt="user 1" className="review__photo"/>
+            <div className="review__user-box">
+              <p className="review__user-name">
+                John Smith
+              </p>
+              <p className="review__user-date">
+                Feb 23rd,2020
+              </p>
+            </div>
+            <div className="review__rating">
+              7.8
+            </div>
+        </figcaption>
+        </figure>
+        <figure className="review">
+            <blockquote className='review__text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Magni officia perspiciatis pariatur cumque quod dolorem fugiat quae ducimus odio ipsa. 
+                Quidem necessitatibus, voluptatem cumque culpa totam eaque at iure harum!
+            </blockquote>
+         <figcaption className="review__user">
+            <img src={user_2_img} alt="user 1" className="review__photo"/>
+            <div className="review__user-box">
+              <p className="review__user-name">
+                Karen Brown
+              </p>
+              <p className="review__user-date">
+                Feb 22rd,2020
+              </p>
+            </div>
+            <div className="review__rating">
+              5.2
+            </div>
+        </figcaption>
+        </figure>
+
+        <button className="btn-inline">Show All <span>&rarr;</span></button>
+            </div>
+
 
             </div>
 
