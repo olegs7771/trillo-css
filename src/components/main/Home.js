@@ -231,8 +231,14 @@ class Home extends Component {
         <button className="btn-inline">Show All <span>&rarr;</span></button>
             </div>
 
-
             </div>
+            {/* DETAIL END  */}
+<div className="cta">
+  <h2 className="cta__book-now">
+    Good news! we have 4 free rooms  for your selected dates!
+  </h2>
+  <button className="btn">Only 4 rooms left</button>
+</div>
 
           </main>
         </div>

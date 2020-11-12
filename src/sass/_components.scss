@@ -411,3 +411,47 @@
     z-index: 0;
   }
 }
+
+////////////////////////////////////////
+// CTA
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+
+  &__book-now {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.btn {
+  background-image: linear-gradient(
+    120deg,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s;
+
+  &::after {
+    content: "BOOK NOW";
+    position: absolute;
+    width: 100%;
+    transform: translate(-15rem, -3rem);
+  }
+
+  &:hover::after {
+    transform: translate(-15rem, 0rem);
+  }
+
+  &:hover {
+    content: none;
+  }
+}
