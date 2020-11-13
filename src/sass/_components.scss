@@ -113,8 +113,12 @@
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
-  &__item {
+
+  @media only screen and (max-width: $bp-1000px) {
+    display: flex;
+    margin-top: 0;
   }
+
   &__link:link,
   &__link:visited {
     color: var(--color-grey-light-1);
@@ -134,13 +138,20 @@
     margin-right: 2rem;
     fill: currentColor;
   }
-  &__icon-name {
-    // color: var(--color-grey-light-4);
-  }
+
   &__item {
     position: relative;
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+      @media only screen and (max-width: $bp-1000px) {
+        &:not(:last-child) {
+          margin-bottom: 0rem;
+        }
+      }
+    }
+
+    @media only screen and (max-width: $bp-1000px) {
+      flex: 0 0 50%;
     }
   }
 
@@ -176,6 +187,9 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2rem;
+  @media only screen and (max-width: $bp-1000px) {
+    display: none;
+  }
 }
 
 ////////////////////////////////////////////////

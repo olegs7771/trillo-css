@@ -33,6 +33,16 @@
 
   --line: 1px solid var(--color-grey-light-2);
 }
+
+// SASS VARIABLES FOR MEDIA QUERIES 1em = 16px
+// 1200px/16px = 75em
+
+$bp-1200px: 75em;
+$bp-1100px: 68.75em;
+$bp-1050px: 65.625em;
+$bp-1000px: 62.5em;
+
+/////////////////////////////////////////
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +56,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and (max-width: $bp-1100px) {
+    font-size: 58%;
+  }
+  @media only screen and (max-width: $bp-1050px) {
+    font-size: 56.5%;
+  }
 }
 body {
   font-family: "Sans Pro", sans-serif;
