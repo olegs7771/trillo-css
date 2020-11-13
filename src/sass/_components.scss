@@ -56,6 +56,10 @@
     height: 2rem;
     fill: var(--color-grey-dark-2);
   }
+  @media only screen and (max-width: $bp-480px) {
+    order: 1; //change order of flex item
+    margin: 1rem auto;
+  }
 }
 ////////////////////////////
 // USER NAVIGATION
@@ -117,6 +121,7 @@
   @media only screen and (max-width: $bp-1000px) {
     display: flex;
     margin-top: 0;
+    flex: 1;
   }
 
   &__link:link,
@@ -129,7 +134,15 @@
     position: relative; // z-index works only with position defined
     z-index: 1;
     display: flex;
-    align-items: center;
+
+    @media only screen and (max-width: $bp-1000px) {
+      justify-content: center;
+      padding: 2rem;
+    }
+    @media only screen and (max-width: $bp-480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__icon {
@@ -137,6 +150,9 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+    @media only screen and (max-width: $bp-480px) {
+      margin: 0rem 0rem 1rem 0rem;
+    }
   }
 
   &__item {
@@ -151,7 +167,8 @@
     }
 
     @media only screen and (max-width: $bp-1000px) {
-      flex: 0 0 50%;
+      flex: 1;
+      border-left: 1px solid var(--color-primary);
     }
   }
 
@@ -210,6 +227,10 @@
   display: flex;
   align-items: center;
   border: var(--line);
+  @media only screen and (max-width: $bp-480px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &__heading {
     font-size: 2.25rem;
@@ -217,11 +238,20 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+    @media only screen and (max-width: $bp-480px) {
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+      font-weight: 600;
+    }
   }
   &__stars {
     // flex: 1;
     margin-right: auto; // element not stretched
     display: flex;
+    @media only screen and (max-width: $bp-480px) {
+      margin-right: 0;
+      padding: 1rem;
+    }
   }
 
   &__icon-star {
@@ -233,6 +263,10 @@
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+    @media only screen and (max-width: $bp-480px) {
+      margin-right: 0;
+      padding: 1rem;
+    }
   }
 
   &__icon-location {
@@ -250,6 +284,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: $bp-480px) {
+      margin-left: 0rem;
+    }
   }
   &__rating-average {
     font-size: 2.25rem;
@@ -358,6 +395,7 @@
     margin-right: auto;
   }
   &__friends {
+    display: flex;
   }
   &__photo {
     box-sizing: content-box;
@@ -424,6 +462,13 @@
     font-family: sans-serif;
     z-index: 0;
   }
+  @media only screen and(max-width:$bp-1000px) {
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  @media only screen and(max-width:$bp-700px) {
+    padding: 4rem;
+  }
 }
 
 ////////////////////////////////////////
@@ -437,6 +482,11 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
+  }
+
+  @media only screen and(max-width:$bp-1000px) {
+    margin-bottom: 2rem;
+    padding: 8rem 2rem 8rem 2rem;
   }
 }
 
