@@ -113,8 +113,12 @@
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
-  &__item {
+  @media only screen and (max-width: 62.5em) {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-around;
   }
+
   &__link:link,
   &__link:visited {
     color: var(--color-grey-light-1);
@@ -141,6 +145,10 @@
     position: relative;
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: 62.5em) {
+        margin-bottom: 0rem;
+      }
     }
   }
 
@@ -171,11 +179,14 @@
 
 ///////////////////////////////////////////
 // LEGAL
-.legal {
+.legal-desktop {
   font-size: 1.2rem;
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2rem;
+  @media only screen and (max-width: 62.5em) {
+    display: none;
+  }
 }
 
 ////////////////////////////////////////////////
@@ -340,8 +351,15 @@
   display: flex;
   align-items: center;
 
+  @media only screen and (max-width: 54.375em) {
+    flex-direction: column;
+  }
+
   &__count {
     margin-right: auto;
+    @media only screen and (max-width: 54.375em) {
+      margin-right: 0;
+    }
   }
   &__friends {
   }
@@ -353,7 +371,7 @@
     border: 3px solid #fff;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2.5rem;
     }
   }
 }
@@ -453,5 +471,18 @@
 
   &:hover {
     content: none;
+  }
+}
+
+.footer {
+  display: none;
+  height: 8rem;
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-grey-dark-1);
+  @media only screen and (max-width: 62.5em) {
+    display: block;
   }
 }

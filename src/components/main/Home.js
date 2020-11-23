@@ -90,7 +90,7 @@ class Home extends Component {
                 </a>
               </li>
             </ul>
-            <div className="legal">
+            <div className="legal-desktop">
               &copy; 2020 by trillo. All rights reserved.
             </div>
           </nav>
@@ -233,15 +233,20 @@ class Home extends Component {
 
             </div>
             {/* DETAIL END  */}
-<div className="cta">
-  <h2 className="cta__book-now">
-    Good news! we have 4 free rooms  for your selected dates!
-  </h2>
-  <button className="btn">Only 4 rooms left</button>
-</div>
+          <div className="cta">
+            <h2 className="cta__book-now">
+              Good news! we have 4 free rooms  for your selected dates!
+            </h2>
+            <button className="btn">Only 4 rooms left</button>
+          </div>
 
           </main>
         </div>
+          <footer className="footer">
+              <div className="footer__legal-desktop">
+                &copy; 2020 by trillo. All rights reserved.
+              </div>
+          </footer>
       </div>
     );
   }
